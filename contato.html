@@ -1,0 +1,72 @@
+<!--Codigo feito por Gustavo Geres e Gabriel Alonso-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Alonso, Gustavo Geres">
+    <title>Contato - HelpMind</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="topo">
+
+            <div class="logo">
+                <img src="logo.jpeg" alt="Logo HelpMind" class="logo-img">
+            </div>
+
+            <a href="index.html" class="contato-btn">Página Inicial</a>
+
+            <h1>Entre em Contato</h1>
+        </div>
+
+    </header>
+
+    <main>
+        <form id="formulario">
+            <label>nome:</label>
+            <input type="text" required>
+
+            <label>email:</label>
+            <input type="email" required>
+
+            <label>telefone:</label>
+            <input type="tel">
+
+            <label>Tipo de ajuda:</label>
+            <select required>
+                <option value="">Selecione uma opção</option>
+                <option>Ansiedade</option>
+                <option>Depressão</option>
+                <option>Estresse</option>
+                <option>Problemas familiares</option>
+                <option>Relacionamentos</option>
+                <option>Dependência química (drogas)</option>
+                <option>Dependência alcoólica</option>
+                <option>Vício em cigarro</option>
+                <option>Baixa autoestima</option>
+                <option>Solidão</option>
+                <option>Dificuldades no trabalho ou estudos</option>
+                <option>Luto</option>
+                <option>Crises emocionais</option>
+                <option>Outro</option>
+            </select>
+
+            <label>Descrição:</label>
+            <textarea placeholder="Fale um pouco sobre você."></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Gabriel Alonso e Gustavo Geres</p>
+    </footer>
+    <script src="contato.js"></script>
+</body>
+
+</html>

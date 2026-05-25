@@ -1,0 +1,210 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("background.jpeg");
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #4CAF50;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 22px;
+}
+
+.logo-img {
+    width: 120px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1000px;
+    width: 90%;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.footer-conteudo {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+    max-width: none;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+
+    background-color: rgba(255,255,255,0.9);
+    padding: 30px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contato-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #20ad25;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contato-btn:hover {
+    background-color: #219150;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.beneficios-servico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.imagem {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+}
+
+.botao {
+    background-color: #27AE60;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.botao:hover {
+    background-color: #219150;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+p {
+    line-height: 1.7;
+    font-size: 17px;
+    color: #333;
+    max-width: 700px;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #1f1f1f;
+}
+
+video {
+    width: 100%;
+    max-width: 500px;
+}
+
+@media (max-width: 768px) {
+
+    header h1 {
+        position: static;
+        transform: none;
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .topo {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    main {
+        padding: 12px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input, select, textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contato-btn, .botao {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
