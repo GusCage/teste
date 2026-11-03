@@ -4,12 +4,22 @@ sequenceDiagram
     actor Fornecedor
     participant Sistema as Sistema do Restaurante
 
-    Fornecedor->>Sistema: Registrar separação dos ingredientes
-    Sistema->>Sistema: Atualizar disponibilidade dos itens no estoque
-    Fornecedor->>Sistema: Informar previsão de chegada dos itens
+    rect rgb(225, 225, 235)
+        Note over Fornecedor,Sistema: Registro dos ingredientes
+        Fornecedor->>Sistema: Registra a separação dos ingredientes
+        Sistema-->>Fornecedor: Confirma o registro da separação
+        Fornecedor->>Sistema: Informa os itens e suas quantidades
+        Sistema-->>Fornecedor: Atualiza a disponibilidade dos itens no estoque
+    end
 
-    opt Emitir nota fiscal/recibo
-        Fornecedor->>Sistema: Solicitar emissão da nota fiscal/recibo
-        Sistema-->>Fornecedor: Emitir nota fiscal/recibo
+    rect rgb(225, 225, 235)
+        Note over Fornecedor,Sistema: Previsão de entrega
+        Fornecedor->>Sistema: Informa o tempo previsto de chegada dos itens
+        Sistema-->>Fornecedor: Confirma a atualização do status de chegada
+    end
+
+    opt Emissão de nota fiscal/recibo
+        Fornecedor->>Sistema: Envia a nota fiscal/recibo
+        Sistema-->>Fornecedor: Confirma o recebimento da nota fiscal/recibo
     end
 ```
