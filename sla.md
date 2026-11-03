@@ -1,10 +1,28 @@
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {
+    'background':'#ffffff',
+    'primaryColor':'#e5e5e5',
+    'primaryTextColor':'#000000',
+    'primaryBorderColor':'#333333',
+    'lineColor':'#333333',
+    'textColor':'#000000',
+    'actorBkg':'#eeeeee',
+    'actorTextColor':'#000000',
+    'actorBorder':'#333333',
+    'signalColor':'#333333',
+    'signalTextColor':'#000000',
+    'labelTextColor':'#000000',
+    'noteBkgColor':'#eeeeee',
+    'noteTextColor':'#000000',
+    'noteBorderColor':'#333333'
+}}}%%
+
 sequenceDiagram
     actor Fornecedor
     participant Sistema as Sistema do Restaurante
 
-    rect rgb(200, 200, 200)
+    rect rgb(235, 235, 235)
         Note over Fornecedor,Sistema: Registro dos ingredientes
         Fornecedor->>Sistema: Registra a separação dos ingredientes
         Sistema-->>Fornecedor: Confirma o registro da separação
@@ -12,9 +30,9 @@ sequenceDiagram
         Sistema-->>Fornecedor: Atualiza a disponibilidade dos itens no estoque
     end
 
-    rect rgb(225, 225, 235)
+    rect rgb(235, 235, 235)
         Note over Fornecedor,Sistema: Previsão de entrega
-        Fornecedor->>Sistema: Informa o tempo previsto de chegada dos itens
+        Fornecedor->>Sistema: Informa o tempo previsto de chegada
         Sistema-->>Fornecedor: Confirma a atualização do status de chegada
     end
 
