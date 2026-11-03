@@ -4,7 +4,7 @@ sequenceDiagram
     actor Fornecedor
     participant Sistema as Sistema do Restaurante
 
-    rect rgb(225, 225, 235)
+    rect rgb(200, 200, 200)
         Note over Fornecedor,Sistema: Registro dos ingredientes
         Fornecedor->>Sistema: Registra a separação dos ingredientes
         Sistema-->>Fornecedor: Confirma o registro da separação
